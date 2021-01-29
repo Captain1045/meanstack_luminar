@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+#first_div{
+    width: 10%;
+    position: relative;
+    margin-left: 20%;
+    background-color: rgb(82, 82, 214);
+    float: left;
+    padding-bottom: 20%;
+
+}
+#second_div{
+    width: 10%;
+    position: relative;
+    margin-left: 2%;
+    background-color: cyan;
+    float: left;
+    padding-bottom: 20%;
+
+}
+#third_div{
+    width: 10%;
+    position: relative;
+    margin-left: 2%;
+    background-color: lightseagreen;
+    float: left;
+    padding-bottom: 20%;
+
+}
+#fourth_div{
+    width: 10%;
+    position: relative;
+    margin-left: 2%;
+    background-color: rgb(242, 255, 183);
+    float: left;
+    padding-bottom: 20%;
+
+}
+#fifth_div{
+    width: 10%;
+    position: relative;
+    margin-left: 2%;
+    background-color: rgb(255, 60, 0);
+    float: left;
+    padding-bottom: 20%;
+
+}

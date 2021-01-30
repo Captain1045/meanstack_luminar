@@ -34,7 +34,7 @@ h1{
     width: 10%;
     position: relative;
     margin-left: 2%;
-    background-color: rgb(242, 255, 183);
+    background-color:yellow;
     float: left;
     padding-bottom: 20%;
 
@@ -43,7 +43,7 @@ h1{
     width: 10%;
     position: relative;
     margin-left: 2%;
-    background-color: rgb(255, 60, 0);
+    background-color:red;
     float: left;
     padding-bottom: 20%;
 

@@ -33,14 +33,14 @@
     border-bottom: solid;
     border-color: black;
 }
-.address
+.contact_content
 {
     margin-left: 20px;
-    line-height: 30px;
+    line-height: 40px;
 }
 .tech_content
 {
-    line-height: 30px;
+    line-height: 40px;
 }
 .career_head
 {

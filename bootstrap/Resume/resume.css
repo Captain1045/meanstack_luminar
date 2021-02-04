@@ -1,0 +1,21 @@
+.head
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.left
+{
+    background-color: lightgrey;
+    position: relative;
+}
+.right
+{
+    background-color: white;
+}
+.contact_head
+{
+    position: relative;
+    text-decoration: underline;
+    width: 100%;
+}

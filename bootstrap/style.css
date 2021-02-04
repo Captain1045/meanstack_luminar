@@ -11,9 +11,9 @@
     color: #5e068a;
 
 }
-.courses_sub_head
+.sub_head
 {
-text-decoration: none;
+    color:#5e068a;
 }
 span
 {
@@ -29,6 +29,15 @@ span
     font-weight: 600;
     margin-top: 50px;
     border-radius: 20px;
+    padding: 10px 20px;
+    
+}
+.view
+{
+    background-color: rgb(79, 19, 107);
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
     padding: 10px 20px;
     
 }

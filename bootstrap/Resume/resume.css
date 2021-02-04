@@ -4,6 +4,12 @@
     color: white;
     text-align: center;
 }
+.name
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 50px;
+}
 .left
 {
     background-color: lightgrey;
@@ -16,6 +22,55 @@
 .contact_head
 {
     position: relative;
-    text-decoration: underline;
     width: 100%;
+    border-bottom: solid;
+    border-color: black;
+}
+.tech_head
+{
+    position: relative;
+    width: 100%;
+    border-bottom: solid;
+    border-color: black;
+}
+.address
+{
+    margin-left: 20px;
+    line-height: 30px;
+}
+.tech_content
+{
+    line-height: 30px;
+}
+.career_head
+{
+    position: relative;
+    width: 100%;
+    border-bottom: solid;
+    border-color: black;
+}
+.career_content
+{
+    line-height: 30px;
+}
+.education_head
+{
+    position: relative;
+    width: 100%;
+    border-bottom: solid;
+    border-color: black;
+}
+.projects_head
+{
+    position: relative;
+    width: 100%;
+    border-bottom: solid;
+    border-color: black;
+}
+.activities_head
+{
+    position: relative;
+    width: 100%;
+    border-bottom: solid;
+    border-color: black;
 }

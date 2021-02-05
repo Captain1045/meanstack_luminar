@@ -26,6 +26,13 @@
     border-bottom: solid;
     border-color: black;
 }
+.language_head
+{
+    position: relative;
+    width: 100%;
+    border-bottom: solid;
+    border-color: black;
+}
 .tech_head
 {
     position: relative;

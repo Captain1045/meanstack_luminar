@@ -1,4 +1,4 @@
-var num1=10,num2=20,num3=30,largest;
+var num1=15,num2=5,num3=20,largest;
 largest=num1;
 var second_largest;
 var smallest;

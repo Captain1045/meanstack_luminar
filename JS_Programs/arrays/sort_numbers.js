@@ -1,4 +1,4 @@
-var arr = [1, 2, 2, 3, 4, 6, 2, 3, 6, 4, 6];
+var arr = [1, 2, 2, 3, 4, 6, 3, 6, 4, 6];
 var num = 2;
 var lower = 0;
 var upper = arr.length-1;

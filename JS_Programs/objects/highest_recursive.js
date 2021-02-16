@@ -19,4 +19,14 @@ for (let word of words) {
     }
 }
 console.log(dic);
-console.log(temp);
+console.log("Highest recursive word is "+temp);
+
+
+// Using array
+var elements=[];
+for(let key in dic)
+{
+    elements.push(dic);
+}
+elements.sort((a,b)=>a-b);
+console.log(elements);

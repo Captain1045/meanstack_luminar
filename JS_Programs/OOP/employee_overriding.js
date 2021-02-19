@@ -17,23 +17,23 @@ emp_array.push(ob2);
 emp_array.push(ob3);
 emp_array.push(ob4);
 
-for(emp of emp_array)
-{
-    if(emp.desig=="developer")
-    {
-        console.log(emp);
-    }
-}
-var names=emp_array.map(ob=>ob.name.toUpperCase());  // map
+// for(emp of emp_array)
+// {
+//     if(emp.desig=="developer")
+//     {
+//         console.log(emp);
+//     }
+// }
+var names=emp_array.map(ob=>ob.name.toUpperCase());  // names to uppercase using maps
 console.log(names);
-console.log(emp_array);
-// emp_array.sort((ob1,ob2)=>ob2["sal"]-ob1["sal"]);
-// console.log("\nDetails of employee with highest salary \n");
-// console.log(emp_array[0]);
+//console.log(emp_array);
 
-emp_array.filter(ob=>ob.desig=="developer").forEach(obj=>console.log(obj.name)); // filter 
+
+emp_array.filter(ob=>ob.desig=="developer").forEach(obj=>console.log(obj.name)); // name of emplyees with designation developer using filter 
 
 var high_sal=emp_array.map(ob=>ob.sal).reduce((ob1,ob2)=>ob1>ob2?ob1:ob2);
-console.log(high_sal);
+console.log("\nHighest salary = "+high_sal);
 
-
+//emp_array.sort((ob1,ob2)=>ob1["sal"]-ob2["sal"]);
+emp_array.sort((ob1,ob2)=>ob1.sal>ob2.sal?-1:1).forEach(ob=>console.log(ob));
+//console.log(emp_array);

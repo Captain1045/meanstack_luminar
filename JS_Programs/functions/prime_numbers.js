@@ -1,12 +1,10 @@
 function prime_limit(lower, upper) {
     var flag = 0, i;
     while (lower <= upper) {
-        if(lower<=1 && upper>=2)
-        {
-            lower=2;
+        if (lower <= 1 && upper >= 2) {
+            lower = 2;
         }
-        else
-        {
+        else {
             console.log("\nNo prime numbers\n");
             break;
         }

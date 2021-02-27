@@ -1,0 +1,10 @@
+#calc {
+    width: 300px;
+    height: 250px;
+}
+
+input {
+    width: 96%;
+    height: 40px;
+    font-size: 20px;
+}

@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Welcome to Ajax</h1>
 </body>
+<script>
+    var request=new XMLHttpRequest();
+    request.open("get","https://jsonplaceholder.typicode.com/posts");
+    request.send();
+    console.log(request.responseText);
+    alert(request.responseText);
+</script>
 </html>

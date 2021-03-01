@@ -13,7 +13,27 @@
     var request=new XMLHttpRequest();
     request.open("get","https://jsonplaceholder.typicode.com/posts");
     request.send();
-    console.log(request.responseText);
-    alert(request.responseText);
+    request.onreadystatechange=()=>{
+        if(request.readyState==4){
+            if((request.status>=200)&&(request.status<300)){
+                //console.log(request.responseText);
+                //var key="title";
+                data=JSON.parse(request.responseText);
+                //console.log(data);
+                for(ob of data)
+                {
+                    console.log(ob["title"]);
+                    //break;
+                }
+            }
+            else{
+                alert("Error!");
+            }
+        }
+
+    }
+
+    //console.log(request.responseText);
+    //alert(request.responseText);
 </script>
 </html>

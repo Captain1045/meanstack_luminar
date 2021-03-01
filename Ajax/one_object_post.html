@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Welcome to Ajax</h1>
+    <table>
+        <tr>
+            <td>User ID<input type="text" id="inputUserid"></td>
+
+        </tr>
+        <tr>
+            <td>ID<input type="text" id="inputId"></td>
+
+        </tr>
+        <tr>
+            <td>Title<input type="text" id="inputTitle"></td>
+
+        </tr>
+        <tr>
+            <td>Body<input type="text" id="inputBody"></td>
+
+        </tr>
+    </table>
+    <button onclick="createPosts()">Create Post</button>
+</body>
+<script>
+    var request = new XMLHttpRequest();
+    request.open("post", "https://jsonplaceholder.typicode.com/posts");
+    function createPosts() {
+        let input_user_id = document.querySelector("#inputUserid").value;
+        let input_id = document.querySelector("#inputId").value;
+        let input_title = document.querySelector("#inputTitle").value;
+        let input_body = document.querySelector("#inputBody").value;
+        let data = { "userId": input_user_id, "id": input_id, "title": input_title, "body": input_body };
+        request.send(data);
+        request.onreadystatechange = () => {
+            if (request.readyState == 4) {
+                if ((request.status >= 200) && (request.status < 300)) {
+                  alert("Success , Status = "+request.status);
+
+                }
+            }
+        }
+
+        //console.log(request.responseText);
+    }
+
+    //console.log(request.responseText);
+    //alert(request.responseText);
+</script>
+
+</html>

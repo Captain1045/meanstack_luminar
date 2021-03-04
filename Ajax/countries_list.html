@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" onload="getPosts()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <button onclick="getPosts()">Load Countries</button><br>
+    <select name="Countries" id="c_list" onclick="getDetails()">
+        
+
+    </select>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Flag</th>
+                <th scope="col">Population</th>
+                <th scope="col">Currency</th>
+            </tr>
+        </thead>
+        <tbody id="table_data">
+
+        </tbody>
+    </table>
+</body>
+<script src="countries_list.js"></script>
+
+</html>

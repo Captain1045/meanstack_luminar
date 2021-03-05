@@ -50,14 +50,22 @@
         var data;
         var name = document.querySelector("#cname").value;
         fetch(`https://restcountries.eu/rest/v2/name/${name}/?fullText=true`)
-        .then(result => result.json())
-        .then(data => populateData(data)).catch(er=>er.message);
+            .then(result => result.json())
+            .then(data => populateData(data)).catch(er => console.log(er.message));
+        // try {
+        //     fetch(`https://restcountries.eu/rest/v3/name/${name}/?fullText=true`)
+        //         .then(result => result.json())
+        //         .then(data => populateData(data));
+        // }
+        // catch (er) {
+
+        //     console.log("haii" + er.message);
+        // }
         // console.log(data);
         // console.log(c_data);
-        
+
     }
-    function populateData(data)
-    {
+    function populateData(data) {
         //console.log(data);
         let c_name = data[0].name;
         let flag = data[0].flag;

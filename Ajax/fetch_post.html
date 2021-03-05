@@ -37,10 +37,9 @@
         let input_title = document.querySelector("#inputTitle").value;
         let input_body = document.querySelector("#inputBody").value;
         let data = {
-            id:input_id,
-            title: input_title,
-            body: input_body,
-            userId: input_user_id
+            "title": input_title,
+            "body": input_body,
+            "userId": input_user_id
         };
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',

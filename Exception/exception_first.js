@@ -13,5 +13,5 @@ catch (ex) {
     }
 }
 finally {
-    console.log("test1\n");
+    console.log("Mandatory Code\n");
 }

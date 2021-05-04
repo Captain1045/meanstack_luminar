@@ -36,4 +36,4 @@ console.log("\nHighest salary = "+high_sal);
 
 //emp_array.sort((ob1,ob2)=>ob1["sal"]-ob2["sal"]);
 emp_array.sort((ob1,ob2)=>ob1.sal>ob2.sal?-1:1).forEach(ob=>console.log(ob));
-//console.log(emp_array);
+console.log(emp_array);
